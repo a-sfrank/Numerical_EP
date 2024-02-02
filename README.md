@@ -28,15 +28,15 @@ For illustration, this code implements two 3-D multi-stable systems.
 * The first example system is an embedded toggle-switch model (ETSM) exhibiting tristability. Model equations and parameters are taken from the following article:
 Wu, S., Zhou, T. & Tian, T. A robust method for designing multistable systems by embedding bistable subsystems. npj Syst Biol Appl 8, 10 (2022). https://doi.org/10.1038/s41540-022-00220-1
 
-* The second example represents a bistable, 3-species marine food-web system (FWM) of the species zooplankton, capelin and cod.
+* The second example represents a bistable system of a theoretical 3-species marine food-web (FWM).
 
 # Included code files and their description:
 
-Code files are separated into different categories:
+Code files are separated into different directories:
 * The main.m and demo.m files run the codes.
 * [User_Defined] ONLY two files need to be adjusted manually by the user, namely InputData.m and SymbolicFunctions.m.
-* [Computations] Codes in this category solve the Ode system and determine the equilibrium points and coordinates, as well as their stability using the Jacobian matrix and eigenvalues.
-* [Graphics] This category encompasses all codes that are needed to plot dynamics and equilibrium points. 
+* [Computations] Codes in this directory solve the ODE system, determine the equilibrium points, and evaluate their stability using the Jacobian matrix.
+* [Graphics] This directory contain codes that are needed to plot dynamics and equilibrium points. 
 
 The following table lists all codes and provides detailed descriptions:
 |File names: | Description:|
@@ -46,13 +46,13 @@ The following table lists all codes and provides detailed descriptions:
 |InputData.m |Specify here conditions for the plots, numerical analyses (e.g., parameter space exploration range), initial conditions, time span integration period, number of total parameters, or discretization step for streamline plot.|
 |SymbolicFunctions.m|File specifies the model to be analyzed and its parameter values. To use code on a different 3-D model, the functions in this file NEED to be adapted. The code also computes the derivatives of the system.  |
 |CompDiffJac.m|Returns the derivatives of the system  equations and the Jacobian matrix.|
-|Solver.m|Solves the ODE and determines the coordinates of the EP of the system numerically.|
-|AnalysisJ.m|Calculates the Jacobian matrix of the system and determines the stability of the EPs by calculating their eigenvalues.|
-|Plots.m|Displays the results from the stability analysis (via the Jacobian matrix) and plots streamlines (if StLines=1 set in InputData.m) and equilibrium points (if EqPoints=1 set in InputData.m) and trajectories of state variables (if StSpace=1 set in InputData.m). This code calls respectively the codes Plots_StreamLines.m, Plots_EqPts.m, and Plots_ODESystem.m, which plot the figures. |
+|Solver.m|Solves the ODE and numerically solves for the EP of the system.|
+|AnalysisJ.m|Calculates the Jacobian matrix of the system and determines stability of the EPs.|
+|Plots.m|Displays the results from the stability analysis (via the Jacobian matrix) and plots streamlines (if StLines=1 set in InputData.m), equilibrium points (if EqPoints=1 set in InputData.m), and trajectories of state variables (if StSpace=1 set in InputData.m). This code calls Plots_StreamLines.m, Plots_EqPts.m, and Plots_ODESystem.m. |
 
 ## Example cases
 For the two presented examples, we include two InputData_exN.m and two SymbolicFunctions_exN.m files, where N describes the number of case example (either N=1 for ETSM, or N=2 for the FWM). 
-To run and distinguish both examples, run demo.m and specify the numeric number of the particular example you want to run.
+To run either examples, run demo.m and when prompted, specify the numeric number of the particular example you want to run.
 
 # Setting Input parameters:
 |File name:|Description:|
@@ -74,3 +74,4 @@ Perform the following steps:
 # Outlook:
 1. We will add more 3D examples.
 2. The code will be extended to higher dimensions (>3D).
+3. Parallel and distributed computing options will be added to speed up computations and higher dimensional (highly non-linear) models efficiently.  
