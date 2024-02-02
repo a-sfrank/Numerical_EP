@@ -74,4 +74,4 @@ Perform the following steps:
 # Outlook:
 1. We will add more 3D examples.
 2. The code will be extended to higher dimensions (>3D).
-3. Parallel and distributed computing options will be added to speed up computations and higher dimensional (highly non-linear) models efficiently.  
+3. Parallel and distributed computing options will be added to speed up computations and handle higher dimensional (highly non-linear) models more efficiently.  
