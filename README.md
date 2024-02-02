@@ -1,9 +1,9 @@
-XXXX
+[![DOI](https://zenodo.org/badge/751763756.svg)](https://zenodo.org/doi/10.5281/zenodo.10609322)
 
 Copyright (c) 2024 Anna-Simone Frank, Samuel Subbey, Andrea Pinke 
 
-If you use or adapt this code or parts of it, cite the following reference: XXXX
-
+If you use or adapt this code or parts of it, cite the following reference: 
+* Anna-Simone Frank, Sam Subbey, Andrea Pinke. (2024). a-sfrank/Numerical_EP: v1.0.0 (v1.0.0). Zenodo. https://doi.org/10.5281/zenodo.10609323
 
 Numerical_EP is free software: you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
 
@@ -16,10 +16,10 @@ For questions or support contact
  * Anna-Simone Frank (asfrank88@gmail.com) or
  * Sam Subbey (samuels@imr.no)
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Download the code at:  XXX
+Download the code at:  https://github.com/a-sfrank/Numerical_EP/tree/v1.0.0 
+
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # General information:
-
 
 The code solves numerically for the equilibrium points (EPs) of a 3-dimensional Ordinary Differential Equation (ODE) model, calculates their stability and plots streamlines and time-series dynamics of the system. It is specifically suited for systems with several trivial equilibria, i.e., multi-stable systems. The equilibrium points calculations are restricted to the positive (>0) coordinate axes only. 
 
@@ -29,7 +29,6 @@ For illustration, this code implements two 3-D multi-stable systems.
 Wu, S., Zhou, T. & Tian, T. A robust method for designing multistable systems by embedding bistable subsystems. npj Syst Biol Appl 8, 10 (2022). https://doi.org/10.1038/s41540-022-00220-1
 
 * The second example represents a bistable, 3-species marine food-web system (FWM) of the species zooplankton, capelin and cod.
-
 
 # Included code files and their description:
 
