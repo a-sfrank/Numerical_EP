@@ -1,6 +1,6 @@
-[![DOI](https://zenodo.org/badge/751763756.svg)](https://zenodo.org/doi/10.5281/zenodo.10609322)
+[![DOI](https://zenodo.org/badge/751763756.svg)](https://zenodo.org/doi/10.5281/zenodo.10609323)
 
-Copyright (c) 2024 Anna-Simone Frank, Samuel Subbey, Andrea Pinke 
+Copyright (c) 2024 Anna-Simone Frank, Samuel Subbey, Andrea Pinke (DOI: 10.5281/zenodo.10609323)
 
 If you use or adapt this code or parts of it, cite the following reference: 
 * Anna-Simone Frank, Sam Subbey, Andrea Pinke. (2024). a-sfrank/Numerical_EP: v1.0.0 (v1.0.0). Zenodo. https://doi.org/10.5281/zenodo.10609323
