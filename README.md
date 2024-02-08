@@ -51,7 +51,7 @@ The following table lists all codes and provides detailed descriptions:
 |Plots.m|Displays the results from the stability analysis (via the Jacobian matrix) and plots streamlines (if StLines=1 set in InputData.m), equilibrium points (if EqPoints=1 set in InputData.m), and trajectories of state variables (if StSpace=1 set in InputData.m). This code calls Plots_StreamLines.m, Plots_EqPts.m, and Plots_ODESystem.m. |
 
 ## Example cases
-For the two presented examples, we include two InputData_exN.m and two SymbolicFunctions_exN.m files, where N describes the number of case example (either N=1 for ETSM, or N=2 for the FWM). 
+* [Examples] For the two presented examples, we include two InputData_exN.m and two SymbolicFunctions_exN.m files, where N describes the number of case example (either N=1 for ETSM, or N=2 for the FWM). 
 To run either examples, run demo.m and when prompted, specify the numeric number of the particular example you want to run.
 
 # Setting Input parameters:
